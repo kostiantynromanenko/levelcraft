@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://crxmys6c4q727"]
 
-[ext_resource type="Script" uid="uid://cndiyjhncin60" path="res://scripts/characters/playerOnGlobalMap.gd" id="1_04uok"]
+[ext_resource type="Script" path="res://scripts/characters/playerOnGlobalMap.gd" id="1_04uok"]
 [ext_resource type="Texture2D" uid="uid://c5ligjbry30lw" path="res://assets/sprites/Knight/IDLE.png" id="2_76oj4"]
 [ext_resource type="Texture2D" uid="uid://dtyf77hwa1gm6" path="res://assets/sprites/Knight/WALK.png" id="3_dyp2m"]
 [ext_resource type="Texture2D" uid="uid://beyk4gnldnxmb" path="res://assets/sprites/Knight/arrow.png" id="4_dyp2m"]
@@ -36,10 +36,6 @@ region = Rect2(480, 0, 96, 84)
 atlas = ExtResource("2_76oj4")
 region = Rect2(576, 0, 96, 84)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jk2m4"]
-atlas = ExtResource("3_dyp2m")
-region = Rect2(0, 0, 96, 84)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_xhtjm"]
 atlas = ExtResource("3_dyp2m")
 region = Rect2(96, 0, 96, 84)
@@ -51,6 +47,10 @@ region = Rect2(192, 0, 96, 84)
 [sub_resource type="AtlasTexture" id="AtlasTexture_xrqxk"]
 atlas = ExtResource("3_dyp2m")
 region = Rect2(288, 0, 96, 84)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk2m4"]
+atlas = ExtResource("3_dyp2m")
+region = Rect2(0, 0, 96, 84)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g66nw"]
 atlas = ExtResource("3_dyp2m")
@@ -98,9 +98,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jk2m4")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_xhtjm")
 }, {
 "duration": 1.0,
@@ -108,6 +105,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xrqxk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jk2m4")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_g66nw")

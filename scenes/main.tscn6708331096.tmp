@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://beem5sw077mkf"]
-
-[ext_resource type="PackedScene" uid="uid://c6ftsq5xoooo8" path="res://scenes/map/global_map.tscn" id="1_o5qli"]
-
-[node name="Main" type="Node2D"]
-scale = Vector2(2, 2)
-
-[node name="GlobalMap" parent="." instance=ExtResource("1_o5qli")]

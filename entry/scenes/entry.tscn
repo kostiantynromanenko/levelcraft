@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://beem5sw077mkf"]
+
+[ext_resource type="Script" path="res://entry/scripts/entry.gd" id="1_iskcd"]
+
+[node name="Entry" type="Node2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_iskcd")

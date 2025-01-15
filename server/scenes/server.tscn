@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://blya0dxm6bsxd"]
+
+[ext_resource type="Script" path="res://server/scripts/server.gd" id="1_t7pqr"]
+[ext_resource type="Script" path="res://server/scripts/player_manager.gd" id="2_ug7jw"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_t7pqr")
+
+[node name="GlobalMap" type="Node" parent="."]
+
+[node name="PlayerManager" type="Node" parent="GlobalMap"]
+script = ExtResource("2_ug7jw")
